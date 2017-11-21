@@ -151,7 +151,6 @@ INSTALLED_APPS = (
     'charge',
     'mptt',
     'aldryn_bootstrap3',
-
     'aldryn_style'
 )
 
