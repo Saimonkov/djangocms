@@ -15,6 +15,7 @@ admin.autodiscover()
 urlpatterns = [
     url(r'^sitemap\.xml$', sitemap,
         {'sitemaps': {'cmspages': CMSSitemap}}),
+    url(r'^', include('djangocms_forms.urls')),
 ]
 
 urlpatterns += i18n_patterns(
@@ -25,6 +26,6 @@ urlpatterns += i18n_patterns(
 # This is only needed when using runserver.
 if settings.DEBUG:
     urlpatterns = [
-        url(r'^media/(?P<path>.*)$', serve,
-            {'document_root': settings.MEDIA_ROOT, 'show_indexes': True}),
-        ] + staticfiles_urlpatterns() + urlpatterns
+                      url(r'^media/(?P<path>.*)$', serve,
+                          {'document_root': settings.MEDIA_ROOT, 'show_indexes': True}),
+                  ] + staticfiles_urlpatterns() + urlpatterns
