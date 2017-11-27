@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, print_function, unicode_literals
 
-import view as view
+
 from cms.sitemaps import CMSSitemap
 from django.conf import settings
 from django.conf.urls import include, url
