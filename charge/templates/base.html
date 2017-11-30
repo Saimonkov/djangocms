@@ -40,7 +40,10 @@
     </div>
 </nav>
 
-{% block content %}{% endblock content %}
+{% block content %}
+    <h1>{{ per }}</h1>
+    <h1>{{ rub_dollar }}</h1>
+{% endblock content %}
 
 <!-- Footer -->
 <footer class="py-5 bg-dark">
@@ -49,12 +52,7 @@
     </div>-->
     {% static_placeholder "Footer" %}
 
-    {% for per in per %}
-        <h1>{{ node2 }}</h1>
-        <div>123123123123123</div>
-    {% endfor %}
-<h1 style="color:#fff">{{ node2 }}</h1>
-<div style="color:#fff">qwerweqrqwerweqr</div>
+
 </footer>
 
 <!-- Bootstrap core JavaScript -->

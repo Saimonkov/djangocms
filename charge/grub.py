@@ -11,5 +11,5 @@ def about_three():
     node2 = 'Значение node2!!! YES!!!'
     print("name=" + node1.nodeName)
 
-    #  return render_to_response('base.html', {'node2': node2} )
-    return node2
+    return render_to_response('base.html', {'node2': node2})
+    # return node2
