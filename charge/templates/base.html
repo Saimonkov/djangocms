@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-  <head>
+<head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,43 +17,50 @@
     <!-- Custom styles for this template -->
     <link href="{% static 'css/modern-business.css' %}" rel="stylesheet">
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
-     {% render_block "css" %}
-  </head>
+    {% render_block "css" %}
+</head>
 
-  <body>
-    {% cms_toolbar %}
-    <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
+<body>
+{% cms_toolbar %}
+<!-- Navigation -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
         <a class="navbar-brand" href="index.html">Start Bootstrap</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            {% show_menu 0 100 100 100 %}
+            <ul class="navbar-nav ml-auto">
+                {% show_menu 0 100 100 100 %}
 
-          </ul>
+            </ul>
         </div>
-      </div>
-    </nav>
+    </div>
+</nav>
 
-  {% block content %}{% endblock content %}
+{% block content %}{% endblock content %}
 
-    <!-- Footer -->
-    <footer class="py-5 bg-dark">
-      <!--<div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
-      </div>-->
-        {% static_placeholder "Footer" %}
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+    <!--<div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+    </div>-->
+    {% static_placeholder "Footer" %}
 
-      <!-- /.container -->
-    </footer>
+    {% for node2 in node2 %}
+        <h1>{{ node2 }}</h1>
+        <div>123123123123123</div>
+    {% endfor %}
+<h1 style="color:#fff">{{ node2 }}</h1>
+<div style="color:#fff">qwerweqrqwerweqr</div>
+</footer>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
-    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-    {% render_block "js" %}
-  </body>
+<!-- Bootstrap core JavaScript -->
+<script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+{% render_block "js" %}
+</body>
 
 </html>
