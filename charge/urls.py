@@ -11,6 +11,7 @@ from django.contrib.sitemaps.views import sitemap
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.views.static import serve
 
+from charge import  views
 
 admin.autodiscover()
 
@@ -18,7 +19,7 @@ urlpatterns = [
     url(r'^sitemap\.xml$', sitemap,
         {'sitemaps': {'cmspages': CMSSitemap}}),
     url(r'^', include('djangocms_forms.urls')),
-    #url(r'^test/', views.test, name='test'),
+    url(r'^test/', views.test, name='test'),
 ]
 
 urlpatterns += i18n_patterns(
