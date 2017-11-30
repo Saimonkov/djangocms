@@ -1,5 +1,11 @@
-from django.http import HttpResponse
+from django.shortcuts import render
+
+from charge.grub import about_three
 
 
 def test(request):
-    return HttpResponse('Hello World!')
+    per = about_three()
+    context={
+        'per':per
+    }
+    return render(request, 'base.html',context)
