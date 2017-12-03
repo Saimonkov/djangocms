@@ -5,7 +5,7 @@
       <paths name="Perm">
         <serverdata>
           <mappings>
-            <mapping deploy="/django_cms" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
           </mappings>
           <excludedPaths>
             <excludedPath path="/ProjectSergey/Perm/django_cms" />
