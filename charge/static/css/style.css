@@ -1,3 +1,77 @@
-.cls {
+@font-face {
+    font-family: "Muller";
+    src: local("Muller"), url("../fonts/MullerThin.woff2") format("woff2"), url("../fonts/MullerThin.woff") format("woff");
+    font-weight: 100;
+    font-style: normal;
+}
 
+@font-face {
+    font-family: "Muller";
+    src: local("Muller"), url("../fonts/MullerBold.woff2") format("woff2"), url("../fonts/MullerBold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Muller";
+    src: local("Muller"), url("../fonts/MullerExtraBold.woff2") format("woff2"), url("../fonts/MullerExtraBold.woff") format("woff");
+    font-weight: 800;
+    font-style: normal;
+}
+
+.topbackground {
+    #display: flex;
+    position: relative;
+    min-height: 660px;
+    margin-bottom: 340px;
+    text-align: right;
+    background: url(../img/banertop.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.presentation__title {
+    text-align: left;
+    margin-top: 93px;
+    margin-left: 63px;
+}
+
+.presentation__title-st {
+    display: block;
+    font-weight: 800;
+    font-size: 132px;
+    line-height: 1;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    color: #202e31;
+
+}
+
+.presentation__title-nd {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 1;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-left: 83px;
+}
+
+.presentation__title-rd {
+display: inline-block;
+    padding: 28px 97px 2px 118px;
+    min-height: 103px;
+    font-weight: 100;
+    font-size: 26px;
+    line-height: 19px;
+    color: #ffc13c;
+    text-align: right;
+    margin-left: 92px;
+    margin-top: -22px;
+    background: url(../img/hr_top.png) center no-repeat;
+    background-size: 100%;
+}
+.btn_top{
+    background: url(../img/button_top.jpg) center no-repeat;
 }

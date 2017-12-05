@@ -2,11 +2,28 @@
 {% load cms_tags %}
 
 {% block title %}{% page_attribute "page_title" %}{% endblock title %}
-
+ {% placeholder "content" %}
 {% block content %}
     <!-- Page Content -->
-    <div class="container">
-        {% placeholder "content" %}
+    <div class="container-fluid topbackground">
+
+
+        <div class="row">
+            <div class="col-md-5">
+
+            </div>
+            <div class="col-md-7">
+                <h2 class="presentation__title">
+                    <span class="presentation__title-st">Скупка</span>
+                    <span class="presentation__title-nd">радиодеталей</span>
+                    <span class="presentation__title-rd">содержащих драгоценные<br>металлы</span>
+                </h2>
+                <div class="">
+                    <a class="btn_top" href="#">Оставить заявку</a>
+                </div>
+            </div>
+
+        </div>
 
     </div>
     <!-- /.container -->
