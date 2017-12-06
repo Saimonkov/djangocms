@@ -159,3 +159,13 @@
     background-size: 87%;
     margin: 0% -16% 0% 12%;
 }
+
+.text_mas {
+    font-weight: 700;
+    font-size: 120%;
+    letter-spacing: .025em;
+    text-transform: uppercase;
+    color: #ffc13c;
+    text-align: center;
+    margin-top: 10px;
+}
