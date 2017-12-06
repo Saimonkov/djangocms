@@ -22,11 +22,13 @@
 .topbackground {
     #display: flex;
     position: relative;
-    min-height: 660px;
+    min-height: 513px;
     margin-bottom: 340px;
     text-align: right;
     background: url(../img/banertop.jpg) center no-repeat;
     background-size: cover;
+    min-height: 513px;
+    max-height: 516px;
 }
 
 .presentation__title {
@@ -38,7 +40,8 @@
 .presentation__title-st {
     display: block;
     font-weight: 800;
-    font-size: 132px;
+    #font-size: 132px;
+    font-size: 7vmax;
     line-height: 1;
     letter-spacing: 0.025em;
     text-transform: uppercase;
@@ -50,7 +53,8 @@
     display: block;
     margin-bottom: 20px;
     font-weight: 800;
-    font-size: 56px;
+    #font-size: 56px;
+    font-size: 3vmax;
     line-height: 1;
     letter-spacing: 0.025em;
     text-transform: uppercase;
@@ -59,11 +63,11 @@
 }
 
 .presentation__title-rd {
-display: inline-block;
-    padding: 28px 97px 2px 118px;
+    display: inline-block;
+    padding: 28px 76px 0px 0px;
     min-height: 103px;
     font-weight: 100;
-    font-size: 26px;
+    font-size: 1.5vmax;
     line-height: 19px;
     color: #ffc13c;
     text-align: right;
@@ -71,7 +75,87 @@ display: inline-block;
     margin-top: -22px;
     background: url(../img/hr_top.png) center no-repeat;
     background-size: 100%;
+    width: 53%;
+    min-width: 300px;
 }
-.btn_top{
+
+.div_btn_top {
+    margin-top: 15px;
+}
+
+.btn_top {
     background: url(../img/button_top.jpg) center no-repeat;
+    font-weight: 700;
+    font-size: 1.1vmax;
+    letter-spacing: .025em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    padding: 34px 69px 34px 17px;
+    background-size: 100%;
+    margin-left: 280px;
+}
+
+.text_b {
+    line-height: 17px;
+    margin-top: 12px;
+    margin-left: 280px;
+}
+
+.col_btn_top {
+    text-align: left;
+}
+
+.col_text_s {
+    text-align: center;
+}
+
+.text_s {
+    font-weight: 800;
+    font-size: 36px;
+    letter-spacing: .025em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.row_4w {
+    text-align: center;
+    background: url("../img/form_top.png") center no-repeat;
+    height: 140px;
+    width: 60%;
+    margin: auto;
+    background-size: 100%;
+}
+
+.img_f1 {
+    background: url("../img/f1.png") center no-repeat;
+
+}
+
+.img_f2 {
+    background: url("../img/f2.png") center no-repeat;
+
+}
+
+.img_f3 {
+    background: url("../img/f3.png") center no-repeat;
+
+}
+
+.img_f4 {
+    background: url("../img/f4.png") center no-repeat;
+
+}
+
+.div_f {
+
+    position: absolute;
+    left: -16px;
+    top: 101px;
+}
+
+.img_f {
+    background-size: 83%;
+    background-size: 87%;
+    margin: 0% -16% 0% 12%;
 }
